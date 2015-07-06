@@ -3,4 +3,7 @@ tasks:
 - id: 1
   title: Make cookies
   description: Chocolate chip cookies are so delicious.  I am hungry.
-total: 1
+- id: 2
+  title: Do something
+  description: Do it today
+total: 2
