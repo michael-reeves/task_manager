@@ -1,4 +1,51 @@
 
 body {
-  background-color: #f0f0f0;
+  background-color: #757885;
+  color: #d8d8dd;
+}
+
+.container {
+  margin: 0 auto;
+  width: 30em;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+nav ul {
+  margin 0 auto;
+}
+
+nav li {
+  display: inline-block;
+  background-color: #555a69;
+  padding: .4em .8em;
+}
+
+a {
+  text-decoration: none;
+  color: #bcb9c5;
+}
+
+a:hover {
+  color: #9a9aa2;
+  
+}
+
+.task {
+  border-top: 1px solid #9a9aa2;
+  background-color: #555a59;
+  background-color: #656879;
+  
+}
+
+.task h3 {
+  margin: 0;
+  padding: .5em 0;
+}
+
+.id-number {
+  padding: .5em;
+  padding-left: 3em;
+  background-color: #555a69;
 }

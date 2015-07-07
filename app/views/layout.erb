@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Task Manager</title>
+  <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
+  <title>My Sinatra Application</title>
 </head>
 <body>
-  <%= yield %>
+  <div class="container">
+    <head>
+      <nav>
+        <ul>
+          <li><a href="/tasks">Task Index</a></li>
+          <li><a href="/tasks/new">New Task</a></li>
+        </ul>
+      </nav>
+    </head>
+
+    <%= yield %>
+
+    <footer>
+      <div id="user">Michael Reeves</div>
+      <a href="https://github.com/michael-reeves/task_manager">Find me on GitHub</a>
+    </footer>
+  </div>
 </body>
 </html>
