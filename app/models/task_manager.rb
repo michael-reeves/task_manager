@@ -7,6 +7,7 @@ class TaskManager
     @database ||= YAML::Store.new("db/task_manager")
   end
 
+  #create
   def self.create(task)
     database.transaction do
       database['tasks'] ||= []
@@ -19,6 +20,7 @@ class TaskManager
     end
   end
 
+  # Read
   def self.raw_tasks
     database.transaction do
       database['tasks'] || []
@@ -37,4 +39,14 @@ class TaskManager
     Task.new(raw_task(id))
   end
 
+  # Update
+  def self.update(id, task)
+    database.transaction do
+      target = database['tasks'].find { |record| record['id'] == id }
+      target['title']       = task[:title]
+      target['description'] = task[:description]
+    end
+  end
+
+  #Delete
 end
