@@ -9,6 +9,18 @@ body {
   width: 30em;
 }
 
+footer {
+  margin-top: 2em;
+  padding: 2em 1em;
+  background-color: #363745; 
+}
+
+#user {
+  margin-bottom: .5em;
+  margin-right: 6em;
+  float: left
+}
+
 h1 {
   margin-bottom: 0;
 }
@@ -48,4 +60,19 @@ a:hover {
   padding: .5em;
   padding-left: 3em;
   background-color: #555a69;
+}
+
+form p {
+  margin-bottom: 0;
+}
+
+form {
+  margin-left: .75em;
+}
+form input, form textarea {
+  margin: .25em 0;
+}
+
+form textarea {
+  height: 5em;
 }
