@@ -3,6 +3,7 @@ GEM
   specs:
     daemons (1.2.3)
     eventmachine (1.0.7)
+    minitest (5.4.3)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
@@ -22,6 +23,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  minitest
   shotgun
   sinatra
   thin

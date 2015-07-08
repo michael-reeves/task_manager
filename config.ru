@@ -1,8 +1,3 @@
-require 'bundler'
-Bundler.require   # requires all the gems in Gemfile
-
-$LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__) + "/app"))
-
-require 'controllers/task_manager_app'
+require File.expand_path('../config/environment',  __FILE__)
 
 run TaskManagerApp
